@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2255354708
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: fuelminer_ui.bundle
+      Dependencies: {}

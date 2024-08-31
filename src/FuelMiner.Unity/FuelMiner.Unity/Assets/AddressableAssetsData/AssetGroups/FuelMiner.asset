@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: FuelMiner
+  m_EditorClassIdentifier: 
+  m_GroupName: FuelMiner
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7aa39e58f904503439821347538376f5
+  m_SerializeEntries:
+  - m_GUID: d2fe095837ca77e4a9cc1a0414ea5964
+    m_Address: fuel_miner_vertical_drill.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - parts_data
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5559246378057c478ec8b85a33e8f07
+    m_Address: fuel_miner_vertical_drill.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bedccadb82c53f24488fe35a3bee2cce
+    m_Address: fuel_miner_vertical_drill_icon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 63a7cb7cf16e85f4cba5baa4da45e5fa, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f9dc1072553f88745a7e682a12e2daf2, type: 2}
+    - {fileID: 11400000, guid: 68f2a0cc695f0a04d89c161ce5170a66, type: 2}
