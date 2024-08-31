@@ -5,7 +5,7 @@
     "partName": "fuel_miner_vertical_drill",
     "author": "Verox",
     "category": "FuelTank",
-    "family": "0010-Drills",
+    "family": "0100-Drills",
     "childStageOffset": 0,
     "cost": 1000,
     "crewCapacity": 0,
@@ -69,7 +69,7 @@
         "NodeSymmetryGroupID": "",
         "nodeType": "Stack",
         "attachMethod": "FIXED_JOINT",
-        "IsMultiJoint": false,
+        "IsMultiJoint": true,
         "MultiJointMaxJoint": 3,
         "MultiJointRadiusOffset": 0.0,
         "MultiJointOnSingleAxis": false,
@@ -77,7 +77,7 @@
         "MultiJointFullBreakStrength": false,
         "position": {
           "x": 0.0,
-          "y": 0.5,
+          "y": 0.43,
           "z": 0.0
         },
         "orientation": {
@@ -85,8 +85,38 @@
           "y": 1.0,
           "z": 0.0
         },
-        "size": 0,
-        "visualSize": 0.0,
+        "size": 1,
+        "visualSize": 1.0,
+        "isResourceCrossfeed": true,
+        "isRigid": true,
+        "angularStrengthMultiplier": 0.0,
+        "contactArea": 0.0,
+        "overrideDragArea": 0.0,
+        "isCompoundJoint": false
+      },
+      {
+        "nodeID": "bottom",
+        "NodeSymmetryGroupID": "",
+        "nodeType": "Stack",
+        "attachMethod": "FIXED_JOINT",
+        "IsMultiJoint": true,
+        "MultiJointMaxJoint": 3,
+        "MultiJointRadiusOffset": 0.0,
+        "MultiJointOnSingleAxis": false,
+        "SingleJointAxis": "X",
+        "MultiJointFullBreakStrength": false,
+        "position": {
+          "x": 0.0,
+          "y": -2.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": -1.0,
+          "z": 0.0
+        },
+        "size": 1,
+        "visualSize": 1.0,
         "isResourceCrossfeed": true,
         "isRigid": true,
         "angularStrengthMultiplier": 0.0,
@@ -214,107 +244,6 @@
               },
               "ModuleType": "KSP.Modules.Module_Color, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
               "DataType": "KSP.Modules.Data_Color, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-              "IsActiveInStagingProp": {
-                "ContextKey": null,
-                "storedValue": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "Name": "PartComponentModule_Deployable",
-        "ComponentType": "KSP.Sim.impl.PartComponentModule_Deployable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "BehaviourType": "KSP.Modules.Module_Deployable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "ModuleData": [
-          {
-            "Name": "Data_Deployable",
-            "ModuleType": "KSP.Modules.Module_Deployable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-            "DataType": "KSP.Modules.Data_Deployable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-            "Data": null,
-            "DataObject": {
-              "$type": "KSP.Modules.Data_Deployable, Assembly-CSharp",
-              "toggleExtend": {
-                "ContextKey": "toggleExtend",
-                "storedValue": false
-              },
-              "DeployLimit": {
-                "ContextKey": "DeployLimit",
-                "storedValue": 1.0
-              },
-              "AnimationNormalizedTime": {
-                "ContextKey": "AnimationNormalizedTime",
-                "storedValue": 0.0
-              },
-              "CurrentDeployState": {
-                "ContextKey": null,
-                "storedValue": "Retracted"
-              },
-              "showStatus": true,
-              "isTracking": true,
-              "applyShielding": true,
-              "applyShieldingExtend": true,
-              "retractable": true,
-              "extendable": true,
-              "TrackingAlignmentOffset": 0.0,
-              "trackingSpeed": 0.25,
-              "EditorAnimSpeedMul": 10.0,
-              "pivotName": "",
-              "alignType": "",
-              "secondaryTransform": "",
-              "animationName": "",
-              "trackingMode": "None",
-              "rotationMode": "YAW",
-              "originalRotation": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0,
-                "w": 0.0
-              },
-              "currentRotation": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0,
-                "w": 0.0
-              },
-              "targetGUID": "myTargetGUID",
-              "LimitRotation": false,
-              "UseDeployLimit": false,
-              "AxisMinMaxRotation": {
-                "x": -180.0,
-                "y": 180.0
-              },
-              "DefaultActionGroup": "None",
-              "deployCrashTolerance": 10.0,
-              "deployMaxTemp": 2000.0,
-              "deployBreakingForce": 200.0,
-              "deployBreakingTorque": 200.0,
-              "DisableAnimatorWhenInactive": false,
-              "AnimDeployStateKey": "isDeployed",
-              "AnimSpeedMultiplierKey": "playbackMul",
-              "AnimReverseStateTransitionTriggerKey": "reverseAnimStateChange",
-              "AnimDeployLimitKey": "deployLimitValue",
-              "DefaultRetractedAnimSpeedValue": 1000.0,
-              "DefaultExtendedAnimSpeedValue": 1000.0,
-              "DeployPartTypeName": "PartModules/Deployable/PartType",
-              "OneTimeExtendActionName": "PartModules/Deployable/ExtendOnly",
-              "DeployToggleActionName": "PartModules/Deployable/Toggle",
-              "ActionGroupToggleName": "PartModules/Deployable/ToggleExtended/Toggle",
-              "ActionGroupExtendName": "PartModules/Deployable/ToggleExtended/Extend",
-              "ActionGroupRetractName": "PartModules/Deployable/ToggleExtended/Retract",
-              "DeployStateRetractedName": "PartModules/Deployable/State/Retracted",
-              "DeployStateExtendedName": "PartModules/Deployable/State/Extended",
-              "DeployStateMovingName": "PartModules/Deployable/State/Moving",
-              "DeployStateBlockedName": "PartModules/Deployable/State/Blocked",
-              "DeployStateExtendedCannotRetractName": "PartModules/Deployable/State/CannotRetract",
-              "DeployRetractedCannotRetractName": "PartModules/Deployable/State/RetractedCannotRetract",
-              "ModuleType": "KSP.Modules.Module_Deployable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-              "IsExtended": false,
-              "IsRetracted": true,
-              "IsRetracting": false,
-              "IsExtending": false,
-              "UseAnimation": true,
-              "DataType": "KSP.Modules.Data_Deployable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
               "IsActiveInStagingProp": {
                 "ContextKey": null,
                 "storedValue": false

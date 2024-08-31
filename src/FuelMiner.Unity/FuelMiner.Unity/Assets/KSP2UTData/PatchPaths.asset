@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Keys:
   - fuel_miner_vertical_drill
+  - fuel_miner_vertical_drill Variant
   Values:
+  - plugin_template/patches/%NAME%.patch
   - plugin_template/patches/%NAME%.patch
